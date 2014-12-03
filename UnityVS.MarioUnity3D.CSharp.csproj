@@ -13,7 +13,7 @@
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -60,10 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AFDebug.cs" />
+    <Compile Include="Assets\Scripts\AFDebugSettings.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\CharacterFactory.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioGameState.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioGameStateFactory.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioSurvivalGame.cs" />
+    <Compile Include="Assets\Scripts\UpdateDebug.cs" />
     <None Include="Assets\AquelaFrameWork\AFFrameWork.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
