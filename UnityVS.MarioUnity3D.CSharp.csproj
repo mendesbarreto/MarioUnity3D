@@ -53,21 +53,20 @@
       <HintPath>Assets\AquelaFrameWork\AFFrameWork.dll</HintPath>
     </Reference>
     <Reference Include="SignalsCSharp">
-      <HintPath>Assets\Plugins\SignalsCSharp.dll</HintPath>
+      <HintPath>Assets\AquelaFrameWork\SignalsCSharp.dll</HintPath>
     </Reference>
     <Reference Include="SmartFox2X">
-      <HintPath>Assets\Plugins\SmartFox2X.dll</HintPath>
+      <HintPath>Assets\AquelaFrameWork\SmartFox2X.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AFDebug.cs" />
-    <Compile Include="Assets\Scripts\AFDebugSettings.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\CharacterFactory.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioGameState.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioGameStateFactory.cs" />
     <Compile Include="Assets\Scripts\Com\Globo\Sitio\Games\MarioSurvivalGame.cs" />
-    <Compile Include="Assets\Scripts\UpdateDebug.cs" />
     <None Include="Assets\AquelaFrameWork\AFFrameWork.dll" />
+    <None Include="Assets\AquelaFrameWork\SignalsCSharp.dll" />
+    <None Include="Assets\AquelaFrameWork\SmartFox2X.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>

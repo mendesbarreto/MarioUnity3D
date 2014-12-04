@@ -17,7 +17,7 @@ public class MarioGameState : AState
     protected override void Awake()
     {
         m_stateID = AState.EGameState.GAME;
-        Initialize(STATE_EVERYTHING);
+        AFDebug.Log("Game");
     }
 
     override public void BuildState()

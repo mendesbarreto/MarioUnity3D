@@ -59,10 +59,10 @@
       <HintPath>Assets\AquelaFrameWork\AFFrameWork.dll</HintPath>
     </Reference>
     <Reference Include="SignalsCSharp">
-      <HintPath>Assets\Plugins\SignalsCSharp.dll</HintPath>
+      <HintPath>Assets\AquelaFrameWork\SignalsCSharp.dll</HintPath>
     </Reference>
     <Reference Include="SmartFox2X">
-      <HintPath>Assets\Plugins\SmartFox2X.dll</HintPath>
+      <HintPath>Assets\AquelaFrameWork\SmartFox2X.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
