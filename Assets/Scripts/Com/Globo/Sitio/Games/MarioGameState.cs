@@ -22,7 +22,7 @@ public class MarioGameState : AState
 
     override public void BuildState()
     {
-        m_characterAnimations = CharacterFactory.Instance.buildHeroAnimation();
+        m_characterAnimations = CharacterFactory.Instance.BuildHero();
 
         Add(m_characterAnimations);
         base.BuildState();
@@ -47,6 +47,11 @@ public class MarioGameState : AState
         else
         {
             m_characterAnimations.GoTo("small_stop");
+        }
+
+        if (Input.GetKey("up"))
+        {
+            m_stateManger.GotoState(AState.EGameState.MENU);
         }
             
         

@@ -14,6 +14,9 @@ public class MarioGameStateFactory : IStateFactory
     {
         switch( newstateID )
         {
+            case AState.EGameState.MENU :
+                return AFObject.Create<MenuState>();
+
             case AState.EGameState.GAME :
                 return AFObject.Create<MarioGameState>();
         }
