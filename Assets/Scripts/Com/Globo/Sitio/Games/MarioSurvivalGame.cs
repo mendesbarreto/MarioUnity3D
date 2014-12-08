@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿#define NGUI
+
+using UnityEngine;
 using System.Collections;
 
 using AquelaFrameWork.Core;
@@ -20,7 +22,6 @@ public class MarioSurvivalGame :  AFEngine
         m_stateManager.Initialize( new MarioGameStateFactory() );
 
 
-        
         //AFStatesController st = CharacterFactory.Instance.BuildHeroAnimation(tras.gameObject);
         //st.GetState("small_walk").gameObject.transform.position = new Vector2(0, -5);
         AFSingleTransition tras = AFObject.Create<AFSingleTransition>();
@@ -28,8 +29,6 @@ public class MarioSurvivalGame :  AFEngine
         sr.sprite = AFAssetManager.Instance.CreateSpriteFromTexture("Common/High/loadingscreen");
         sr.transform.localScale = new Vector3(5,5,5);
         m_stateManager.AddTransition(tras);
-
-        
 
         //Call the Init of AFEngine
         base.Initialize();

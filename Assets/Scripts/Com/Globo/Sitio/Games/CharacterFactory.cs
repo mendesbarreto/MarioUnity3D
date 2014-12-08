@@ -23,17 +23,18 @@ public class CharacterFactory : ASingleton<CharacterFactory>
        
        m_heroStates = AFObject.Create<AFStatesController>("Hero Controller");
 
-       AFMovieClip animation = AFObject.Create<AFMovieClip>("small_walk");
+       AFMovieCLipNGUI animation = AFObject.Create<AFMovieCLipNGUI>("small_walk");
+
        animation.Init(heroAtlas.GetSprites("small_walk"));
        animation.gameObject.AddComponent<BoxCollider2D>();
        m_heroStates.Add("small_walk", animation, false);
 
-       animation = AFObject.Create<AFMovieClip>("small_stop");
+       animation = AFObject.Create<AFMovieCLipNGUI>("small_stop");
        animation.Init(heroAtlas.GetSprites("small_stop"));
        animation.gameObject.AddComponent<BoxCollider2D>();
        m_heroStates.Add("small_stop", animation, true);
 
-       m_heroStates.gameObject.AddComponent<Rigidbody2D>();
+       //m_heroStates.gameObject.AddComponent<Rigidbody2D>();
       
        m_heroStates.transform.localScale = new UnityEngine.Vector3(3, 3, 3);
 
@@ -52,13 +53,13 @@ public class CharacterFactory : ASingleton<CharacterFactory>
        else
            m_heroStates = AFObject.Create<AFStatesController>("Hero Controller");
 
-       AFMovieClip animation = AFObject.Create<AFMovieClip>("small_walk");
+       AFMovieCLipNGUI animation = AFObject.Create<AFMovieCLipNGUI>("small_walk");
        animation.Init(heroAtlas.GetSprites("small_walk"));
 
 
        m_heroStates.Add("small_walk", animation, false);
 
-       animation = AFObject.Create<AFMovieClip>("small_stop");
+       animation = AFMovieCLipNGUI.Create<AFMovieCLipNGUI>("small_stop");
        animation.Init(heroAtlas.GetSprites("small_stop"));
        
        m_heroStates.Add("small_stop", animation, true);
